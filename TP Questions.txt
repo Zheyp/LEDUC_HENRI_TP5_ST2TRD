@@ -1,0 +1,23 @@
+1. What is this code about? 
+The code manage the display of an item list in a shop, with thier attached attribute, "SellIn" for the time remaining to sell this item and "Quality" for its intrisinc value. all parameters except items name vary each after each day has passed.
+
+2. Can you clearly identify the name of all the goods stored in the Guilded Rose?
+All the goods are stored in an Item List : "+5 Dexterity Vest", "Aged Brie", "Elixir of the Mongoose", "Sulfuras, Hand of Ragnaros", "Backstage passes to a TAFKAL80ETC concert"
+
+3. What happens when the day is over?
+All items except for Sulfuras see their SellIn updated and somes have also their quality modified.
+
+4. What happens to cheese when the day is over?
+The cheese with the concert ticket are the only item that gain in quality when the day is over.
+
+5. What happens when a concert ticket goes over its expiration day?
+The ticket quality drop to 0
+
+6. What makes this code hard to read?
+Code is really not clean nor simple. lot of duplicates code and a cascade of if condition to make work its logic.
+
+7. Do you think the rules are clear enough so that you could rework the entire solution
+from scratch?
+There is a lack of clarity in somes of the rules, re-creating the solution from scratch could lead to differents results than the outpout 
+of the current application, we may better work on the current solution and try to replicate the output on a more optimised way. 
+Even if it take more time it will be more adequate for the users of the app.
