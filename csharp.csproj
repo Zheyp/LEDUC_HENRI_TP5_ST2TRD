@@ -61,12 +61,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Aged_Brie.cs" />
     <Compile Include="ApprovalTest.cs" />
+    <Compile Include="Concert_Ticket.cs" />
+    <Compile Include="Conjured_Item.cs" />
+    <Compile Include="CustomItem.cs" />
+    <Compile Include="CustomItemCollec.cs" />
     <Compile Include="GildedRose.cs" />
     <Compile Include="GildedRoseTest.cs" />
     <Compile Include="Item.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StandardItem.cs" />
+    <Compile Include="Sulfuras.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
