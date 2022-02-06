@@ -9,7 +9,6 @@
         }
 
         public void updateState() {
-            decreaseSellByDayValueByOne();
             if (SellInOver(10)) {
                 IncreaseQualityBy(1);
             } else if (SellInOver(5)) {
@@ -19,6 +18,7 @@
             } else {
                 SetQualityToZero();
             }
+            decreaseSellByDayValueByOne();
         }
 
         private void decreaseSellByDayValueByOne() {

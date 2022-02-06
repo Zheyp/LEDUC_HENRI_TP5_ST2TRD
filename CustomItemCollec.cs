@@ -14,10 +14,10 @@ namespace csharp
         public readonly static String CONJURED_ITEM = "Conjured";
 
         public CustomItemCollec(Item item) {
-            ITEM_TYPE_LIST.Add(SULFURAS, new Sulfuras());
-            ITEM_TYPE_LIST.Add(AGED_BRIE, new Aged_Brie(item));
-            ITEM_TYPE_LIST.Add(CONCERT_TICKET, new Concert_Ticket(item));
-            ITEM_TYPE_LIST.Add(CONJURED_ITEM, new Conjured_Item(item));
+            ITEM_TYPE_LIST[SULFURAS] = new Sulfuras();
+            ITEM_TYPE_LIST[AGED_BRIE] = new Aged_Brie(item);
+            ITEM_TYPE_LIST[CONCERT_TICKET] = new Concert_Ticket(item);
+            ITEM_TYPE_LIST[CONJURED_ITEM] = new Conjured_Item(item);
         }
 
         public CustomItem CustomisedItem(Item item) {

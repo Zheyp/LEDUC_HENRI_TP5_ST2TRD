@@ -9,8 +9,8 @@
         }
 
         public void updateState() {
-            DecreaseSellIn();
             increaseQuality();
+            DecreaseSellIn();
         }
         
 
@@ -19,7 +19,10 @@
         }
 
         private void increaseQuality() {
-            item.Quality += 1;
+            if (item.SellIn > 0)
+                item.Quality += 1;
+            else
+                item.Quality += 2;
         }
     }
 }

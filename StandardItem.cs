@@ -8,13 +8,13 @@
             this.item = item;
         }
 
-        public void updateState() { 
-            Decrease_SellIn();
+        public void updateState() {
             if (SellInOverZero()) {
                 DecreaseQualityBy(DecreaseQuality());
             } else {
                 DecreaseQualityBy(DecreaseQualitySubZeroSellIn());
             }
+            Decrease_SellIn();
         }
 
         public virtual int DecreaseQuality() {
